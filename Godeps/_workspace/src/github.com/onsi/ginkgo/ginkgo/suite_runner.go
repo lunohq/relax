@@ -5,10 +5,10 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/ginkgo/config"
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/ginkgo/ginkgo/interrupthandler"
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/ginkgo/ginkgo/testrunner"
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/ginkgo/ginkgo/testsuite"
+	"github.com/onsi/ginkgo/config"
+	"github.com/onsi/ginkgo/ginkgo/interrupthandler"
+	"github.com/onsi/ginkgo/ginkgo/testrunner"
+	"github.com/onsi/ginkgo/ginkgo/testsuite"
 )
 
 type compilationInput struct {

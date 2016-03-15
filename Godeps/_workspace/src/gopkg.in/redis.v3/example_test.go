@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/gopkg.in/redis.v3"
+	"gopkg.in/redis.v3"
 )
 
 var client *redis.Client

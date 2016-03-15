@@ -3,7 +3,7 @@ package matchers
 import (
 	"fmt"
 
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/gomega/format"
+	"github.com/onsi/gomega/format"
 )
 
 type SucceedMatcher struct {

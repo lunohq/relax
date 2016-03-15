@@ -2,9 +2,9 @@ package matchers_test
 
 import (
 	"errors"
-	. "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/ginkgo"
-	. "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/gomega"
-	. "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/gomega/matchers"
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
+	. "github.com/onsi/gomega/matchers"
 )
 
 var _ = Describe("Equal", func() {

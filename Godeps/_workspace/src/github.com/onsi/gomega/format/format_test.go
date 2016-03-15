@@ -2,10 +2,10 @@ package format_test
 
 import (
 	"fmt"
-	. "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/ginkgo"
-	. "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/gomega"
-	. "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/gomega/format"
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/gomega/types"
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
+	. "github.com/onsi/gomega/format"
+	"github.com/onsi/gomega/types"
 	"strings"
 )
 

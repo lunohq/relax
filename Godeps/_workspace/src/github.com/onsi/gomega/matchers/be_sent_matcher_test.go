@@ -1,11 +1,11 @@
 package matchers_test
 
 import (
-	. "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/gomega/matchers"
+	. "github.com/onsi/gomega/matchers"
 	"time"
 
-	. "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/ginkgo"
-	. "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/gomega"
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
 )
 
 var _ = Describe("BeSent", func() {

@@ -6,7 +6,7 @@ import (
 	"net"
 	"strconv"
 
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/gopkg.in/bufio.v1"
+	"gopkg.in/bufio.v1"
 )
 
 type multiBulkParser func(rd *bufio.Reader, n int64) (interface{}, error)

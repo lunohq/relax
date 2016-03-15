@@ -5,9 +5,9 @@ import (
 	"os"
 	"path/filepath"
 
-	. "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/ginkgo"
-	. "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/ginkgo/ginkgo/testsuite"
-	. "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/gomega"
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/ginkgo/ginkgo/testsuite"
+	. "github.com/onsi/gomega"
 )
 
 var _ = Describe("TestSuite", func() {

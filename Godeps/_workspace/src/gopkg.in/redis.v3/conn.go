@@ -4,7 +4,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/gopkg.in/bufio.v1"
+	"gopkg.in/bufio.v1"
 )
 
 var (

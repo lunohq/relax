@@ -2,9 +2,9 @@ package leafnodes
 
 import (
 	"fmt"
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/ginkgo/internal/codelocation"
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/ginkgo/internal/failer"
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/ginkgo/types"
+	"github.com/onsi/ginkgo/internal/codelocation"
+	"github.com/onsi/ginkgo/internal/failer"
+	"github.com/onsi/ginkgo/types"
 	"reflect"
 	"time"
 )

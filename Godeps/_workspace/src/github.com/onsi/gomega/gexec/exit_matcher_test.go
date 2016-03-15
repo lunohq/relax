@@ -1,12 +1,12 @@
 package gexec_test
 
 import (
-	. "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/gomega/gexec"
+	. "github.com/onsi/gomega/gexec"
 	"os/exec"
 	"time"
 
-	. "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/ginkgo"
-	. "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/gomega"
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
 )
 
 type NeverExits struct{}

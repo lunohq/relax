@@ -14,8 +14,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/facebookgo/clock"
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/facebookgo/stats"
+	"github.com/facebookgo/clock"
+	"github.com/facebookgo/stats"
 )
 
 const (

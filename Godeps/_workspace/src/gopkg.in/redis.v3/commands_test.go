@@ -7,10 +7,10 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/ginkgo"
-	. "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/gomega"
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
 
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/gopkg.in/redis.v3"
+	"gopkg.in/redis.v3"
 )
 
 var _ = Describe("Commands", func() {

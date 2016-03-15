@@ -1,13 +1,13 @@
 package leafnodes_test
 
 import (
-	. "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/ginkgo"
-	. "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/ginkgo/internal/leafnodes"
-	. "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/gomega"
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/ginkgo/internal/leafnodes"
+	. "github.com/onsi/gomega"
 
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/ginkgo/internal/codelocation"
-	Failer "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/ginkgo/internal/failer"
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/ginkgo/types"
+	"github.com/onsi/ginkgo/internal/codelocation"
+	Failer "github.com/onsi/ginkgo/internal/failer"
+	"github.com/onsi/ginkgo/types"
 	"time"
 )
 

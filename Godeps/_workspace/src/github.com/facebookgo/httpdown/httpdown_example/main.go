@@ -7,7 +7,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/facebookgo/httpdown"
+	"github.com/facebookgo/httpdown"
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {

@@ -7,9 +7,9 @@ import (
 	"time"
 	"strconv"
 
-	log "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/Sirupsen/logrus"
+	log "github.com/Sirupsen/logrus"
 
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/gopkg.in/redis.v3"
+	"gopkg.in/redis.v3"
 )
 
 var redisClient *redis.Client

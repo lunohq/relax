@@ -13,7 +13,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/facebookgo/grace/gracehttp"
+	"github.com/facebookgo/grace/gracehttp"
 )
 
 func TestMain(m *testing.M) {

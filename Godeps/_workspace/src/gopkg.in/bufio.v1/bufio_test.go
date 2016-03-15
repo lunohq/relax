@@ -16,7 +16,7 @@ import (
 	"time"
 	"unicode/utf8"
 
-	. "github.com/zerobotlabs/relax/Godeps/_workspace/src/gopkg.in/bufio.v1"
+	. "gopkg.in/bufio.v1"
 )
 
 // Reads from a reader and rot13s the result.

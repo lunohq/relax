@@ -1,6 +1,6 @@
 {
 	"ImportPath": "github.com/zerobotlabs/relax",
-	"GoVersion": "go1.6",
+	"GoVersion": "go1.5.3",
 	"Packages": [
 		"./..."
 	],

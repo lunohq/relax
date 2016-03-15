@@ -18,10 +18,10 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/gomega/internal/assertion"
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/gomega/internal/asyncassertion"
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/gomega/internal/testingtsupport"
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/gomega/types"
+	"github.com/onsi/gomega/internal/assertion"
+	"github.com/onsi/gomega/internal/asyncassertion"
+	"github.com/onsi/gomega/internal/testingtsupport"
+	"github.com/onsi/gomega/types"
 )
 
 const GOMEGA_VERSION = "1.0"

@@ -12,12 +12,12 @@ import (
 	"strings"
 	"time"
 
-	log "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/Sirupsen/logrus"
+	log "github.com/Sirupsen/logrus"
 	"github.com/zerobotlabs/relax/redisclient"
 	"github.com/zerobotlabs/relax/utils"
 
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/gorilla/websocket"
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/gopkg.in/redis.v3"
+	"github.com/gorilla/websocket"
+	"gopkg.in/redis.v3"
 )
 
 // This data structure holds all clients that are connected to Slack's RealTime API

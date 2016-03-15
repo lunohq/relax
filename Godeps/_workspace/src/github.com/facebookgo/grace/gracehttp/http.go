@@ -15,8 +15,8 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/facebookgo/grace/gracenet"
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/facebookgo/httpdown"
+	"github.com/facebookgo/grace/gracenet"
+	"github.com/facebookgo/httpdown"
 )
 
 var (

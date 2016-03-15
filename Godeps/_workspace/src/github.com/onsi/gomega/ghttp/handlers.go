@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"net/url"
 
-	. "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/gomega"
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/gomega/types"
+	. "github.com/onsi/gomega"
+	"github.com/onsi/gomega/types"
 )
 
 //CombineHandler takes variadic list of handlers and produces one handler

@@ -17,9 +17,9 @@ import (
 
 	"github.com/facebookgo/ensure"
 	"github.com/facebookgo/freeport"
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/facebookgo/clock"
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/facebookgo/httpdown"
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/facebookgo/stats"
+	"github.com/facebookgo/clock"
+	"github.com/facebookgo/httpdown"
+	"github.com/facebookgo/stats"
 )
 
 type onCloseListener struct {

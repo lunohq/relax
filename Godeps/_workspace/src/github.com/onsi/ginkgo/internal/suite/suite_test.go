@@ -3,19 +3,19 @@ package suite_test
 import (
 	"bytes"
 
-	. "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/ginkgo"
-	. "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/ginkgo/internal/suite"
-	. "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/gomega"
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/ginkgo/internal/suite"
+	. "github.com/onsi/gomega"
 
 	"math/rand"
 	"time"
 
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/ginkgo/config"
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/ginkgo/internal/codelocation"
-	Failer "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/ginkgo/internal/failer"
-	Writer "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/ginkgo/internal/writer"
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/ginkgo/reporters"
-	"github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/onsi/ginkgo/types"
+	"github.com/onsi/ginkgo/config"
+	"github.com/onsi/ginkgo/internal/codelocation"
+	Failer "github.com/onsi/ginkgo/internal/failer"
+	Writer "github.com/onsi/ginkgo/internal/writer"
+	"github.com/onsi/ginkgo/reporters"
+	"github.com/onsi/ginkgo/types"
 )
 
 var _ = Describe("Suite", func() {
