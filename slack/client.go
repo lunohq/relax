@@ -250,11 +250,15 @@ func (c *Client) sendEvent(responseType string, msg *Message, text string, times
 		return err
 	}
 
-	message := &BrokerMessage {
+	message := &BrokerMessage{
 		Body: string(eventJson),
 		ContentType: "application/json",
-		Properties: &BrokerProperties {
+		Properties: BrokerProperties{
 			DeliveryTag: uuid.String(),
+			DeliveryInfo: BrokerDeliveryInfo{
+				Exchange: os.Getenv("BROKER_KOMBU_EXCHANGE"),
+				RoutingKey: os.Getenv("BROKER_KOMBU_ROUTING_KEY"),
+			},
 		},
 	}
 

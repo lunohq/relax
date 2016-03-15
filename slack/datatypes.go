@@ -183,4 +183,10 @@ type BrokerMessage struct {
 
 type BrokerProperties struct {
 	DeliveryTag string `json:"delivery_tag"`
+	DeliveryInfo BrokerDeliveryInfo `json:"delivery_info"`
+}
+
+type BrokerDeliveryInfo struct {
+	Exchange string `json:"exchange"`
+	RoutingKey string `json:"routing_key"`
 }

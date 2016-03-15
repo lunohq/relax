@@ -6,5 +6,7 @@ web:
     - RELAX_BOTS_PUBSUB=relax_bots_pubsub
     - RELAX_EVENTS_QUEUE=relax_events_queue
     - REDIS_URL=redis://redis:6379/3
+    - BROKER_KOMBU_EXCHANGE=relax
+    - BROKER_KOMBU_ROUTING_KEY=relax
   external_links:
     - services_redis_1:redis
