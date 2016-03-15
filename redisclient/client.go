@@ -5,6 +5,7 @@ import (
 	"os"
 	"sync"
 	"time"
+	"strconv"
 
 	log "github.com/zerobotlabs/relax/Godeps/_workspace/src/github.com/Sirupsen/logrus"
 
@@ -21,6 +22,7 @@ func Client() *redis.Client {
 	if redisClient == nil {
 		password := ""
 		host := ""
+		var db int64 = 0
 
 		redisUrl := os.Getenv("REDIS_URL")
 
@@ -31,6 +33,12 @@ func Client() *redis.Client {
 				if url.User != nil {
 					password, _ = url.User.Password()
 				}
+				if url.Path != "" {
+					value, err := strconv.Atoi(url.Path[1:])
+					if err == nil {
+						db = int64(value)
+					}
+				}
 			}
 		} else {
 			host = os.Getenv("REDIS_HOST")
@@ -40,7 +48,7 @@ func Client() *redis.Client {
 		redisClient = redis.NewClient(&redis.Options{
 			Addr:       host,
 			Password:   password,
-			DB:         0,
+			DB:         db,
 			MaxRetries: 5,
 		})
 
