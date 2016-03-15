@@ -15,6 +15,7 @@ import (
 	log "github.com/Sirupsen/logrus"
 	"github.com/zerobotlabs/relax/redisclient"
 	"github.com/zerobotlabs/relax/utils"
+	"github.com/nu7hatch/gouuid"
 
 	"github.com/gorilla/websocket"
 	"gopkg.in/redis.v3"
@@ -244,6 +245,21 @@ func (c *Client) sendEvent(responseType string, msg *Message, text string, times
 
 	eventJson, err := json.Marshal(event)
 
+	uuid, err := uuid.NewV4()
+	if err != nil {
+		return err
+	}
+
+	message := &BrokerMessage {
+		Body: string(eventJson),
+		ContentType: "application/json",
+		Properties: &BrokerProperties {
+			DeliveryTag: uuid.String(),
+		},
+	}
+
+	messageJson, err := json.Marshal(message)
+
 	if err != nil {
 		return err
 	} else {
@@ -266,7 +282,7 @@ func (c *Client) sendEvent(responseType string, msg *Message, text string, times
 			}
 
 			if shouldSend {
-				intCmd := tx.RPush(os.Getenv("RELAX_EVENTS_QUEUE"), string(eventJson))
+				intCmd := tx.RPush(os.Getenv("RELAX_EVENTS_QUEUE"), string(messageJson))
 				if intCmd == nil || intCmd.Val() != 1 {
 					return fmt.Errorf("Unexpected error while pushing to RELAX_EVENTS_QUEUE")
 				}

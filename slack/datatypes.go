@@ -174,3 +174,13 @@ type Event struct {
 	Provider       string `json:"provider"`
 	EventTimestamp string `json:"event_timestamp"`
 }
+
+type BrokerMessage struct {
+	Body string `json:"body"`
+	ContentType string `json:"content-type"`
+	Properties BrokerProperties `json:"properties"`
+}
+
+type BrokerProperties struct {
+	DeliveryTag string `json:"delivery_tag"`
+}
