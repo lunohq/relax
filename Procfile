@@ -1,1 +1,1 @@
-web: relax
+relax: ./build/relax
